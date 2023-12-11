@@ -205,7 +205,7 @@ with open("input.txt") as f_handle:
 	complete_part_number = []
 	complete_is_symbol_adjacent_value = []
 	complete_gear_location = []
-	gear_ratio_products = []
+	gear_ratios = []
 	gear_locations_with_part_numbers = {}
 	for part_number in potential_part_numbers:
 		if part_number:
@@ -235,5 +235,5 @@ with open("input.txt") as f_handle:
 			gear_ratio = 1
 			for gear_locations_with_part_numbers_value in gear_locations_with_part_numbers_values:
 				gear_ratio *= gear_locations_with_part_numbers_value
-			gear_ratio_products.append(gear_ratio)	
-print("The sum of all the gear ratios in the engine schematic for part 2 is:", sum(gear_ratio_products))
+			gear_ratios.append(gear_ratio)	
+print("The sum of all the gear ratios in the engine schematic for part 2 is:", sum(gear_ratios))
